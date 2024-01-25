@@ -1,0 +1,97 @@
+:root: {
+    --count: 0;
+}
+body {
+    background-color: mediumpurple;
+}
+h1 {
+    color: plum;
+    margin-left: 20px;
+    
+}
+tN {
+    color: peachpuff;
+    margin-left: 80px;
+    font-size: 160px;
+    position: relative;
+    animation-name: fall;
+    animation-duration: 4s;
+    float: center;
+}
+@keyframes fall {
+    0% {left:0px; top:0px; rotate: 0deg;}
+    25% {left:200px; top:0px; rotate: 90deg;}
+    50% {left:200px; top:200px; rotate: 180deg;}
+    75% {left:0px; top:200px; rotate: 270deg;}
+    100% {left:0px; top:0px; rotate: 360deg;}
+}
+mover {
+  float: left;
+  width: 30px;
+  height: 20px;
+  background: paleturquoise;
+  position: relative;
+  animation: mymove 5s infinite;
+  animation-play-state: false;
+}
+
+@keyframes mymove {
+    from {left: 0px; rotate: 0deg;}
+    to {left: 200px; rotate: 360deg;}
+}
+
+
+
+p {
+    float: right;
+    font-family: verdana;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: bold;
+    color: #6495ED;
+    text-decoration-thickness: 50%;
+  /*  background-color: #FFEBCD; */
+}
+a {
+    font-family: verdana;
+    text-decoration: none;
+    text-decoration-thickness: 50%;
+    font-size: 12px;
+    color: green;
+}
+t1 {
+    font-family: verdana;
+    text-decoration: none;
+    text-decoration-thickness: 50%;
+    font-size: 24px;
+    color: teal;
+    animation-duration: 30s;
+    animation-name: loadin; 
+}
+@keyframes loadin {
+    from{color: mediumpurple;}
+    to {color: springgreen;}
+}
+
+.button {
+    transition-duration:0.4s;
+    border: none;
+    color: mediumpurple;
+    padding: 60px 256px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 80px 40px;
+    cursor: pointer;
+    animation-name: fall;
+    animation-duration: 4s;
+}
+.button1 {background-color: mediumpurple;}
+.button:hover {
+    background-color: #463E3F;
+    color: mediumpurple;
+    animation-name: mymove;
+    animation-iteration-count: infinite;
+    
+}

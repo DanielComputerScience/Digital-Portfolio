@@ -1,0 +1,86 @@
+:root: {
+    --count: 0;
+}
+.grid-container {
+    display: grid;
+    grid-template-areas:
+	'header header header header header header'
+	'menu main main main right right'
+	'menu footer footer footer footer footer';
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+header {
+    background-color: darkblue;
+    grid-area: header;
+    text-decoration: none;
+    color: white;
+    
+    
+    
+
+}
+body {
+    background-color: lightblue;
+}
+nav {
+    
+    
+    background-color: grey;
+    
+    grid-area: menu;
+}
+aa {
+    color: darkgoldenrod;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+
+section {
+    content: "";
+    display: table;
+    clear: both;
+
+    h1 {
+	color: blue;
+	margin-left: 20px;
+    }
+    p {
+	font-family: verdana;
+
+	font-size: 20px;
+	color: #6495ED;
+	/*background-color: #ADD8F9;*/
+    }
+    a {
+	font-family: verdana;
+	text-decoration: none;
+	font-size: 12px;
+	color: green;
+    }
+    .button {
+	transition-duration:0.4s;
+	border: none;
+	color: lightblue;
+	padding: 60px 256px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 80px 40px;
+	cursor: pointer;
+    }
+    .button1 {background-color: lightblue;}
+    .button:hover {
+	background-color: #463E3F;
+	color: lightblue;
+    }
+
