@@ -1,37 +1,96 @@
 <!DOCTYPE html>
+<!-- Website - www.codingnepalweb.com -->
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="sites.css">
-    <meta charset="utf-8">
-    <title>Digital Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elijah Williams;</title>
+    <link rel="icon" type="image/x-icon" href="Resume.pdf">
   </head>
   <body>
-    <div class="grid-container">
-      <header>
-	<a style="text-decoration:none" href="index.html"><h1>Digital Portfolio</h1></a>
-      </header>
-      
-      
-      
-      <div class="nav">
-	<a style="text-decoration:none" href="CS-I/index.html"><h2>Computer Science I</h2></a>
-	<a style="text-decoration:none" href="CS-II/index.html"><h2>Computer Science II</h2></a>
-	<a style="text-decoration:none" href="DM/index.html"><h2>Discrete Math</h2></a>
-	<a style="text-decoration:none" href="ISP/index.html"><h2>ISP</h2></a>
-	<a style="text-decoration:none" href="BHM/index.html"><aa>BHM</aa></a>
-	
-      </div>
+    <section class="header">
+      <nav>
+        <a href="homepage.html"><img src="./img/homepageimg.png"></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times-circle-o" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="CS-I/index.html">Computer Science I</a></li>
+            <li><a href="CS-II/index.html">Computer Science II</a></li>
+            <li><a href="DM/index.html">Discrete Math</a></li>
+            <li><a href="ISP/index.html">ISP</a></li>
+            <li><a href="BHM/index.html">Black History Month</a></li>
+          </ul>
+          <i class="fa fa-times-circle-o"  onclick="showMenu()"></i>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <section class="diets">
+	<h1 class="workouts">Daniel Williams</h1>
+	<p class="description">
+	  <!--  <p class="description">Click start on the button the workout for the Workout Level.</p> -->
+	<div class="row">
 
-      <p> This is my about me stuff. I am Elijah Williams, a junior attending Allen HS. I would like to study computer science.
-	<embed src="resume.pdf" width="800px" height="2100px" />
-      </p>
-      <button class="button button1">Secret Button</button>
-      <button style="background-color: #3498db; color: #fff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; box-shadow: 0 0 10px #3498db;" onmouseover="this.style.boxShadow='0 0 20px #3498db';" onmouseout="this.style.boxShadow='0 0 10px #3498db';">Glowing button</button>
+          <h3 class="beginner">Education</h3>
+          <br>
+	  
+          <p class="beginner-desc"> </p>
+	  <embed src="Resume.pdf" width="25%" height="20%" />
+          <br>
+	  
+	  <!--	  <div class="subintL">-->
+	    <div class="subintL">
+	      <embed src="CS-I/index.html" width="25%" height="20%" />
+	      <p> Water is one of the most important tools to start with for workouts. Water is important for day to day life to help regulate your temperature, bring nutrients to cells, protects joints and organs, then water helps in delivering the nutrients needed in building muscle, then replenishing the swealost in hard workouts.</p>
+	    </div class="subintL">
+	    <div class="subintM">
+	      <p> Now simple options like potatoe wedges, simple deli sandwhiches, and </p>
+	      
+	    </div class="subintM">
+	    <div class="subintR">
+	      <p> Section for vitamins</p>
+	    </div class="subintR">
 
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/vE3BAgh_VAQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <a href="beginner.html"><button class="beginner-btn">Start</button></a>
+          </div>
+	  <br>
+	  <div class="row">
+            <h3 class="intermediate">Intermediate</h3>
+            <br>
+	    <p class="intermediate-desc"> Intermediate diets take a bit more time, but have a higher focus on protreins, unsaturated fats, and important minerals. Intermediate Diets can consist of foods such as healthy omelettes, with eggs, cheese and chicken, chicken and rice plates, salads, frozen yogurt, assorted nuts, and fish.</p>
+	  </div class="row">
+	  <br>
+	  <div class="row">
+	    <p class="subintL"> Intermediate protein options are chicken and rice plates, assorted nuts, and rice and beans.</p>
+	    <p class="subintM"> Intermediate grains are quinoa, rice bowls, corn, and other startches like pastas, and sandwiches.</p>
+	    
+	    <p class="subintR"> Intermediate foods for vitamins are bannanas for potassium, citrus fruits, for vitamin D, and salt.</p>
+	    <!--      <img src="evian water png.webp" alt="Flowers in Chania" width="460"-->
+	    <br>
+	    
+	    
+	    
+	    
+            <a href="intermediate.html"><button class="intermediate-btn">Start</button></a>
+          </div>
+          <br>
+          <br>
+          <h3 class="advanced">Advanced</h3>
+          <br>
+	  <div class="row">
+            <p class="advanced-desc"> Advanced diets consist of foods such as oatmeal, burrito bowls, pesto and chicken, humas, chicken tikka masala</p>
+            <br>
+	    <p class="subintL"> Section for proteins</p>
+	    <p class="subintM"> Section for grains</p>
+	    <p class="subintR"> Section for vitamins</p>
 
-      <iframe width="560" height="315" src="https://www.tubi.tv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</section>
+            <a href="advanced.html"><button class="advanced-btn">Start</button></a>
+          </div>
+          <link rel="icon" type="image/x-icon" href="/img/homepageimg.png" />
+          <link rel="stylesheet" href="homepage.css" />
+          <link rel="stylesheet" href="workout.css" />
+	  <link rel="stylesheet" href="diet.css" />
+          <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 
-</body>
 </html>
+
